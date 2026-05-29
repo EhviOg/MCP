@@ -1,0 +1,14 @@
+{
+  "name": "React Native MCP",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "forwardPorts": [8081, 19006],
+  "postCreateCommand": "cd server && npm install && npm run build && cd ../app && npm install",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "expo.vscode-expo-tools",
+        "dbaeumer.vscode-eslint"
+      ]
+    }
+  }
+}
